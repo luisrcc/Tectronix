@@ -1,0 +1,55 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <div id="formHeader">
+      <td>
+        <tr>
+          <button mdbRipple type="button" class="btn btn-info">Crear Reportes</button>
+          <button mdbRipple type="button" class="btn btn-info">Actividades</button>
+          <button mdbRipple type="button" class="btn btn-info">Trabajdores</button>
+        </tr>
+      </td>
+    </div>
+    <div>
+      <td>
+        <tr>
+          <div class="dateInit">
+            <mat-form-field appearance="fill">
+              <mat-label>Desde</mat-label>
+              <input matInput [matDatepicker]="picker">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </tr>
+      </td>
+      <td>
+        <tr>
+          <div class="dateFinish">
+            <mat-form-field appearance="fill">
+              <mat-label>Desde</mat-label>
+              <input matInput [matDatepicker]="picker1">
+              <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+              <mat-datepicker #picker1></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </tr>
+      </td>
+    </div>
+    <div class="input-group mb-1">
+      <select class="browser-default custom-select" id="inputGroupSelect03"
+        aria-label="Example select with button addon" style="margin: 10px; margin-left: 70px; margin-right: 70px;">
+        <option selected>Seleccionar Activdad</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPxffIZZ0ZB5-wtEEIgaPCk5ix5K14D3Qonao5YhJdmIk2jm1xBk9xC-5V6DR53DWUnf4&usqp=CAU' style="width: 400px; height: 250px; margin-bottom: 10px;">
+
+  </div>
+</div>
